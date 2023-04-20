@@ -1,0 +1,115 @@
+/* Variables */
+:root {
+    --color-celeste: #4ECDFF;
+    --color-celeste-oscuro:#274657;
+    --color-azul-opaco: #11171F;
+    --color-azul-oscuro: #0D1118;
+}
+
+/* Configuración Inicial de body */
+body {
+    background: var(--color-azul-oscuro);
+    font-family: 'Rubik', sans-serif;
+}
+
+.color-celeste {
+    color: var(--color-celeste);
+}
+.color-celeste-oscuro {
+    color: var(--color-azul-oscuro);
+}
+
+/* Remueve foco sweet alert */
+.swal2-close:focus {
+    box-shadow: none !important;
+}
+
+/* SECCION HEADER */
+
+.header h1 {
+    color: var(--color-celeste);
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    display: inline-block;
+}
+
+/* SECCION MAIN */
+
+.main h2 {
+    color: var(--color-celeste);
+}
+
+/*  ----------------
+    - SECCIÓN MAIN -
+    ----------------
+*/
+
+/* COLOR DE LA CARD EN ROW PROYECTOS DESAFIO LATAM */
+.main .proyectos-dl .card {
+    background: var(--color-azul-opaco);
+}
+
+/* BORDER DE LA CARD EN ROW PROYECTOS DESAFIO LATAM */
+.main .proyectos-dl .border-card {
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: rgba(22, 29, 37, 0.5);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+/* BORDER HOVER DE LA CARD EN ROW PROYECTOS DESAFIO LATAM */
+.main .proyectos-dl .border-card:hover {
+    border-color: rgba(104, 211, 255, 0.25);
+}
+
+.main .proyectos-dl .titulo-principal {
+    font-weight: 600;
+}
+
+/* COLOR DE LINEA DIVISORA */
+.main .proyectos-dl hr {
+    background: var(--color-celeste);
+}
+
+/* Tamaño Subtítulo */
+.main .proyectos-dl .card-subtitle {
+    font-size: 13px;
+}
+
+/* Tamaño Texto descripción */
+.main .proyectos-dl .card-text {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* Color Botón Detalles */
+.btn-detalles {
+    border: 2px solid rgba(104, 211, 255, 0.25);
+    color: #FFF;
+    font-weight: 100;
+}
+
+/* Hover Botón Detalles */
+.btn-detalles:hover {
+    background: rgba(104, 211, 255, 0.25);
+    font-weight: 500;
+    color: #FFF;
+}
+
+/* Tamaño del detalle predefinido */
+.main .proyectos-dl .sub-body{
+    height: 72px;
+}
+
+/* SECCION FOOTER */
+
+footer {
+    background-color: rgba(104, 211, 255, 0.25);
+}
+
