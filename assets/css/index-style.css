@@ -33,16 +33,23 @@ body {
     display: inline-block;
 }
 
-/* SECCION MAIN */
-
-.main h2 {
-    color: var(--color-celeste);
-}
-
 /*  ----------------
     - SECCIÓN MAIN -
     ----------------
 */
+.main h2 {
+    color: var(--color-celeste);
+}
+
+/* Cambia tipologia en texto de inicio */
+.main .texto-inicio {
+    font-weight: 100;
+}
+
+/* Color división texto inicio con los card */
+.main .division-texto-inicio {
+    background: var(--color-celeste);
+}
 
 /* COLOR DE LA CARD EN ROW PROYECTOS DESAFIO LATAM */
 .main .proyectos-dl .card {
