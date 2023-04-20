@@ -1,8 +1,8 @@
 const proyectos = {
-    "semana1": "",
-    "semana2": "",
-    "semana3": "",
-    "semana4": "",
+    "semana1": {"pagina":"https://moragaga.github.io/dl-primer-paso-cv-s1/", "imagen": "assets/img/semana1.jpg"},
+    "semana2": {"pagina":"https://moragaga.github.io/dl-chicstyle-s2/", "imagen": "assets/img/semana2.jpg"},
+    "semana3": {"pagina":"https://moragaga.github.io/dl-iguanas-s3/", "imagen": "assets/img/semana3.jpg"},
+    "semana4": {"pagina":"https://moragaga.github.io/dl-cuppon-s4/", "imagen": "assets/img/semana4.jpg"},
     "semana5": {"pagina":"https://moragaga.github.io/dl-mini-cv-s5/", "imagen": "assets/img/semana5.jpg"},
     "semana6": {"pagina":"https://moragaga.github.io/", "imagen": "assets/img/semana6.jpg"}
 }
@@ -63,35 +63,35 @@ document.querySelectorAll(".btn-popup").forEach((elemento) => {
 });
 
 
-//Función que muestra mensaje en construcción
-document.querySelectorAll(".link-construccion").forEach((elemento)=>{
-    elemento.addEventListener("click", ()=> {
-        Swal.fire({
-            icon: 'info',
-            html: `<div>
-                        <div class="row pt-4 text-center">
-                            <h1 class="titulo-bloque text-white">'Oops...'</h1>
-                            <h4 class="text-muted">Sitio en construcción</h4>
-                        </div>
-                        <div class="text-center pt-4">
-                            <a class="btn btn-detalles py-2 px-5" id="cerrar-ventana">Cerrar</a>
-                        </div>
-                    </div>`,
-            showCloseButton: true,
-            allowOutsideClick: true,
-            showCancelButton: false,
-            showConfirmButton: false,
-            // background: "#202021",
-            willOpen: () => {
-                // Selecciona el contenido del pop up
-                const contenido = Swal.getHtmlContainer();
-                const html = contenido.querySelector.bind(contenido);
+////Función que muestra mensaje en construcción
+// document.querySelectorAll(".link-construccion").forEach((elemento)=>{
+//     elemento.addEventListener("click", ()=> {
+//         Swal.fire({
+//             icon: 'info',
+//             html: `<div>
+//                         <div class="row pt-4 text-center">
+//                             <h1 class="titulo-bloque text-white">'Oops...'</h1>
+//                             <h4 class="text-muted">Sitio en construcción</h4>
+//                         </div>
+//                         <div class="text-center pt-4">
+//                             <a class="btn btn-detalles py-2 px-5" id="cerrar-ventana">Cerrar</a>
+//                         </div>
+//                     </div>`,
+//             showCloseButton: true,
+//             allowOutsideClick: true,
+//             showCancelButton: false,
+//             showConfirmButton: false,
+//             // background: "#202021",
+//             willOpen: () => {
+//                 // Selecciona el contenido del pop up
+//                 const contenido = Swal.getHtmlContainer();
+//                 const html = contenido.querySelector.bind(contenido);
 
-                // Al detectar el evento click en el pop up redirige a la página
-                html("#cerrar-ventana").addEventListener("click", ()=>{
-                    Swal.close();
-                })
-            }
-        })
-    })
-});
+//                 // Al detectar el evento click en el pop up redirige a la página
+//                 html("#cerrar-ventana").addEventListener("click", ()=>{
+//                     Swal.close();
+//                 })
+//             }
+//         })
+//     })
+// });
