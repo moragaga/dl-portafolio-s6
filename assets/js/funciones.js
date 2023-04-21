@@ -34,7 +34,7 @@ document.querySelectorAll(".btn-popup").forEach((elemento) => {
                         <a class="btn btn-detalles py-2 px-5" id="ver-pagina">Ir a Página</a>
                     </div>
                 </div>`,
-            width: '1000px',
+            width: '750px',
             showCloseButton: true,
             showCancelButton: false,
             showConfirmButton: false,
