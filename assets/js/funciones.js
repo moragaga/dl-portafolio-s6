@@ -81,6 +81,18 @@ document.querySelectorAll(".btn-popup").forEach((elemento) => {
 });
 
 
+//Activación tooltip
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltipTriggerEl)=> {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+// Remueve el foco del botón con redes para que el tooltip se esconda
+document.querySelectorAll(".sub-red").forEach((elemento) =>{
+    elemento.addEventListener("click", (e)=> {
+        e.target.blur();
+    })
+});
+
 ////Función que muestra mensaje en construcción
 // document.querySelectorAll(".link-construccion").forEach((elemento)=>{
 //     elemento.addEventListener("click", ()=> {
